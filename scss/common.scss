@@ -1,0 +1,60 @@
+$default-ui-size: 2328; //设计搞尺寸
+$default-window-size: 320,
+360,
+375,
+412,
+414,
+480,
+768,
+1024,
+1164,
+1360; //需要兼容的尺寸
+$img-url: "../images/"; //全局图片路径
+// 全局单位换算
+@function rem($px) {
+	@if $px==auto {
+		@return auto;
+	}
+	@else {
+		@return $px / (16 * 2)+rem;
+	}
+}
+
+// 绝对居中
+@mixin flex-center {
+	@include display-flex;
+	@include align-items(center);
+	@include justify-content(center);
+}
+
+// 全局背景显示 $url 图片路径 $position 图片位置 $rep 平铺
+@mixin bgImg($url, $bgSize:100%, $position:center, $rep:no-repeat) {
+	background-image: url($img-url + $url);
+	background-size: $bgSize;
+	background-repeat: $rep;
+	background-position: $position;
+}
+
+// 全局过度动画
+@mixin transition($attr:all, $time:.2s, $type:linear) {
+	transition: $attr $time $type;
+}
+
+// // 全局媒体查询
+// @mixin fontSize($size:$default-ui-size) {
+// 	font-size: $size / ($default-ui-size / 3) * 100%;
+// }
+
+// @mixin min-screen($res) {
+// 	@media only screen and (min-width: $res) {
+// 		@content;
+// 	}
+// }
+
+// @each $animal in $default-window-size {
+// 	@include min-screen($animal + px) {
+// 		html {
+// 			@include fontSize($animal);
+// 		}
+// 	}
+// }
