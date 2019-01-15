@@ -1,4 +1,22 @@
 @import 'common';
+@font-face {
+  font-family: 'MostardesignBold';
+  src: url('../font/MostardesignBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MostardesignRegular';
+  src: url('../font/MostardesignRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PingFang';
+  src: url('../font/PingFang.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 header,
 article,
 footer {
@@ -36,12 +54,17 @@ header {
   ul {
     display: flex;
     margin-top: rem(190);
-    margin-right: rem(60);
     li {
       font-size: rem(24);
       margin-right: rem(50);
+      line-height: 1;
       cursor: pointer;
+      &:last-child{
+        margin: 0;
+      }
+      font-family: 'MostardesignRegular';
       &.active {
+        font-family: 'MostardesignBold';
         font-weight: bold;
       }
     }
@@ -51,19 +74,38 @@ article > section {
   justify-content: space-between;
   width: 100%;
   display: flex;
+  h2,h3,p {
+    white-space: pre-line;
+  }
+  h2 {
+    font-family: 'MostardesignBold';
+    font-size: rem(60);
+    line-height: 1.2;
+  }
+  h3 {
+    font-family: 'MostardesignRegular';
+    font-size: rem(40);
+  }
+  p{
+    font-size: rem(40);
+    font-family: 'PingFang';
+  }
   &.silde01 {
     height: rem(1094);
     .silde-01-left {
-      img {
-        &:nth-child(1) {
-          width: rem(580);
-          margin-top: rem(520);
-        }
-        &:nth-child(2) {
-          width: rem(428);
-          margin-top: rem(242);
+      h2 {
+        font-size: rem(60);
+        margin-top: rem(600);
+        span {
+          font-size: rem(80);
+          display: block;
+          margin-bottom: rem(25);
         }
       }
+    }
+    p {
+      font-size: rem(48);
+      margin-top: rem(180);
     }
     .silde-01-right {
       img {
@@ -82,16 +124,13 @@ article > section {
       }
     }
     .silde-02-center {
-      img {
-        &:nth-child(1) {
-          width: rem(296);
-          height: rem(277);
+      section {
+        p {
+          margin-top: rem(120);
         }
-        &:nth-child(2) {
-          width: rem(377);
-          height: rem(77);
-          margin-top: rem(1291);
-        }
+      }
+      > h3 {
+        margin-top: rem(1270);
       }
     }
     .silde-02-right {
@@ -115,17 +154,12 @@ article > section {
       display: flex;
       align-items: flex-end;
       flex-direction: column;
-      img {
-        &:nth-child(1) {
-          width: rem(501);
-          height: rem(188);
-          margin-top: rem(607);
-        }
-        &:nth-child(2) {
-          width: rem(355);
-          height: rem(39);
-          margin-top: rem(255);
-        }
+      h2 {
+        margin-top: rem(720);
+        text-align: right;
+      }
+      p {
+        margin-top: rem(180);
       }
     }
   }
@@ -145,11 +179,12 @@ article > section {
           width: rem(1530);
           height: rem(734);
         }
-        &:nth-child(2) {
-          width: rem(649);
-          height: rem(405);
-          margin-top: rem(420);
-        }
+      }
+      h2 {
+        margin-top: rem(410);
+      }
+      p {
+        margin-top: rem(200);
       }
     }
   }
@@ -168,17 +203,12 @@ article > section {
       display: flex;
       align-items: flex-end;
       flex-direction: column;
-      img {
-        &:nth-child(1) {
-          width: rem(285);
-          height: rem(116);
-          margin-top: rem(660);
-        }
-        &:nth-child(2) {
-          width: rem(233);
-          height: rem(39);
-          margin-top: rem(285);
-        }
+      h2 {
+        text-align: right;
+        margin-top: rem(720);
+      }
+      p {
+        margin-top: rem(180);
       }
     }
   }
@@ -201,16 +231,13 @@ article > section {
           width: rem(736);
           height: rem(736);
         }
-        &:nth-child(2) {
-          width: rem(233);
-          height: rem(188);
-          margin-top: rem(95);
-        }
-        &:nth-child(3) {
-          width: rem(237);
-          height: rem(37);
-          margin-top: rem(145);
-        }
+      }
+      h2 {
+        text-align: right;
+        margin-top: rem(90);
+      }
+      p {
+        margin-top: rem(200);
       }
     }
   }
@@ -229,17 +256,12 @@ article > section {
       display: flex;
       align-items: flex-end;
       flex-direction: column;
-      img {
-        &:nth-child(1) {
-          width: rem(380);
-          height: rem(201);
-          margin-top: rem(665);
-        }
-        &:nth-child(2) {
-          width: rem(237);
-          height: rem(39);
-          margin-top: rem(188);
-        }
+      h2 {
+        text-align: right;
+        margin-top: rem(730);
+      }
+      p {
+        margin-top: rem(170);
       }
     }
   }
@@ -252,6 +274,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding-top: rem(30);
+  font-family: 'PingFang';
   &:before {
     position: absolute;
     content : '';
