@@ -58,3 +58,21 @@ $img-url: "../images/"; //全局图片路径
 // 		}
 // 	}
 // }
+@font-face {
+  font-family: 'MostardesignBold';
+  src: url('../font/MostardesignBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MostardesignRegular';
+  src: url('../font/MostardesignRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PingFang';
+  src: url('../font/PingFang.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

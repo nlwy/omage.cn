@@ -1,0 +1,97 @@
+@import 'common';
+
+body {
+  color: #fff;
+  background-color: #000;
+}
+header {
+  a {
+    color: #fff!important;
+  }
+}
+footer {
+  a:link {
+    color: #fff;
+    font-family: 'PingFang';
+  }
+  &:before {
+    background-color: #fff;
+  }
+}
+
+article > section {
+  &.ocdc01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 100%;
+      &:nth-child(2) {
+        width: rem(307);
+        height: rem(97);
+        margin-top: rem(190);
+      }
+    }
+    h3 {
+      margin-top: rem(80);
+    }
+  }
+  &.ocdc02 {
+    display: flex;
+    margin-top: rem(440);
+    justify-content: space-between;
+    section {
+      width: rem(730);
+      h3 {
+        line-height: 1.1;
+        margin-top: rem(130);
+      }
+      h4 {
+        margin-top: rem(40);
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &.ocdc03 {
+    margin-top: rem(440);
+    img {
+      width: 100%;
+      height: rem(1084);
+    }
+  }
+  &.ocdc04 {
+    margin-top: rem(440);
+    img {
+      width: rem(738);
+      height: rem(738);
+    }
+  }
+  &.ocdc05 {
+    display: flex;
+    flex-direction: column;
+    h3,h4{
+      text-align: center;
+    }
+    h3 {
+      margin-top: rem(160);
+    }
+    h4 {
+      margin-top: rem(70);
+    }
+  }
+  &.ocdc06 {
+    img {
+      width: rem(1534);
+      height: rem(1150);
+      margin:0 auto;
+    }
+    margin: rem(270) auto;
+  }
+  h4 {
+    font-size: rem(24);
+    font-family: 'PingFang';
+    white-space: pre-line;
+  }
+}

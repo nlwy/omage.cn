@@ -1,22 +1,5 @@
 @import 'common';
-@font-face {
-  font-family: 'MostardesignBold';
-  src: url('../font/MostardesignBold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'MostardesignRegular';
-  src: url('../font/MostardesignRegular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'PingFang';
-  src: url('../font/PingFang.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+
 header,
 article,
 footer {
@@ -268,7 +251,7 @@ article > section {
 }
 footer {
   margin-top: rem(260);
-  margin-bottom: rem(570);
+  margin-bottom: rem(270);
   font-size: rem(32);
   position: relative;
   display: flex;
