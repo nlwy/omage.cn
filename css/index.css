@@ -353,3 +353,54 @@ footer:before {
   left: 0;
   height: 0.25rem;
 }
+
+.about01 img {
+  width: 100%;
+  height: 14.6875rem;
+}
+
+.about02 {
+  margin-top: 5rem;
+}
+
+.about02 .about02-left {
+  min-width: 23.125rem;
+}
+
+.about02 .about02-left h2 span {
+  font-size: 2.5rem;
+  display: block;
+}
+
+.about02 .about02-left h3 {
+  font-size: 1.875rem;
+  margin-top: 0.625rem;
+  font-family: 'MostardesignBold';
+}
+
+.about02 .about02-center {
+  min-width: 14.0625rem;
+}
+
+.about02 .about02-center p, .about02 .about02-center h4 {
+  font-size: 0.75rem;
+  font-family: 'MostardesignRegular';
+  white-space: pre-line;
+}
+
+.about02 .about02-center h4 {
+  font-weight: bold;
+}
+
+.about02 .about02-right p {
+  font-size: 0.75rem;
+  font-family: 'PingFang';
+}
+
+.about02 .about02-right p span {
+  font-family: 'MostardesignBold';
+}
+
+.about02 .about02-right p > b {
+  font-family: 'MostardesignBold';
+}

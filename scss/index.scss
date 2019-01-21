@@ -268,3 +268,49 @@ footer {
     height: rem(8);
   }
 }
+.about01 {
+  img {
+    width: 100%;
+    height: rem(470);
+  }
+}
+.about02 {
+  margin-top: rem(160);
+  .about02-left {
+    min-width: rem(740);
+    h2 {
+      span {
+        font-size: rem(80);
+        display: block;
+      }
+    }
+    h3 {
+      font-size: rem(60);
+      margin-top: rem(20);
+      font-family: 'MostardesignBold';
+    }
+  }
+  .about02-center {
+    p,h4 {
+      font-size: rem(24);
+      font-family: 'MostardesignRegular';
+      white-space: pre-line;
+    }
+    h4 {
+      font-weight: bold;
+    }
+    min-width: rem(450);
+  }
+  .about02-right {
+    p {
+      font-size: rem(24);
+      font-family: 'PingFang';
+      span {
+        font-family: 'MostardesignBold';
+      }
+      > b {
+        font-family: 'MostardesignBold';
+      }
+    }
+  }
+}
